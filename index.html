@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMpool - Tacos e Acessórios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f8f8;
+            color: #111;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .history, .contact {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .product-card h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+            color: #666;
+            background: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Botão de scroll suave para topo */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #111;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>VMpool</h1>
+    <nav>
+        <a href="#history">Sobre Nós</a>
+        <a href="#products">Produtos</a>
+        <a href="#contact">Contactos</a>
+    </nav>
+</header>
+
+<section id="history" class="history">
+    <h2 class="section-title">Sobre Nós</h2>
+    <img src="header-placeholder.jpg" alt="Nossa História" style="max-width:100%; border-radius:10px; margin-bottom:20px;">
+    <p>
+        A VMpool nasceu da paixão pelo bilhar e pela qualidade de equipamentos.  
+        Cada taco e acessório é escolhido ou produzido para oferecer precisão, durabilidade e estilo, garantindo a melhor experiência para jogadores de todos os níveis.
+    </p>
+</section>
+
+<section id="products" class="products">
+    <h2 class="section-title" style="grid-column: 1 / -1; text-align:center;">Produtos</h2>
+
+    <!-- Produto 1 -->
+    <div class="product-card">
+        <img src="taco1-placeholder.jpg" alt="Taco Carbon">
+        <h3>Taco Carbon Premium</h3>
+        <p>Taco de fibra de carbono, tecnologia anti-vibração, perfeito para jogadas precisas.</p>
+        <p><strong>Qualidades:</strong> equilíbrio, durabilidade, baixa deflexão</p>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="product-card">
+        <img src="taco2-placeholder.jpg" alt="Taco Madeira Nobre">
+        <h3>Taco Madeira Nobre</h3>
+        <p>Madeira tratada de alta densidade, toque suave e excelente resposta mecânica.</p>
+        <p><strong>Qualidades:</strong> controlo superior, acabamento premium, peso personalizável</p>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="product-card">
+        <img src="acessorio-placeholder.jpg" alt="Luvas Profissionais">
+        <h3>Luvas Profissionais</h3>
+        <p>Reduz atrito e garante deslize fluido do taco. Ideal para clima quente ou sessões longas.</p>
+        <p><strong>Qualidades:</strong> confortável, respirável, ótimo ajuste</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contactos</h2>
+    <p>Email: o-teu-email@example.com</p>
+    <p>Instagram: @teu_nome</p>
+    <p>Telefone / WhatsApp: +351 912 345 678</p>
+</section>
+
+<footer>
+    &copy; 2025 VMpool. Todos os direitos reservados.
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">Topo</a>
+
+<script>
+    // Mostrar botão de voltar ao topo
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 300){
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
